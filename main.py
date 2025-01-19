@@ -1,7 +1,8 @@
 from functions import *
 
-playerScore = gameStart()
+goal = generateGoal()
+
+playerScore = gameStart(goal)
 computerScore = computerRoll()
 
-print("Player score: " + str(playerScore))
-print("Computer score: " + str(computerScore))
+win(playerScore, computerScore, goal)
